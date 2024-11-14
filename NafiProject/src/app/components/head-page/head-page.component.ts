@@ -1,12 +1,22 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Router, RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-head-page',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterLink
+  ],
   templateUrl: './head-page.component.html',
   styleUrl: './head-page.component.css'
 })
-export class HeadPageComponent {
+export class HeadPageComponent implements  OnInit{
+
+
+  constructor(private router :Router) {
+  }
+  ngOnInit(): void {
+  }
+
 
 }

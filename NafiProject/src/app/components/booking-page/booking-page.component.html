@@ -1,1 +1,157 @@
-<p>booking-page works!</p>
+<!-- Sidebar -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 bg-white vh-100 p-3">
+      <h5 class="text-center mb-4">Prestataire</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Réservations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Avis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profil</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-10">
+      <div class="container mt-4">
+
+        <!-- Dashboard Stats -->
+        <div class="row mb-4">
+          <div class="col-md-3">
+            <div class="card text-center p-3">
+              <h6 class="card-title">Réservations</h6>
+              <p class="fs-4 text-primary">35</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center p-3">
+              <h6 class="card-title">Services</h6>
+              <p class="fs-4 text-primary">12</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center p-3">
+              <h6 class="card-title">Avis</h6>
+              <p class="fs-4 text-primary">56</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center p-3">
+              <h6 class="card-title">Note Moyenne</h6>
+              <p class="fs-4 text-success">4.5/5</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reservations Table -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Réservations</h5>
+            <table class="table table-hover mt-3">
+              <thead class="table-light">
+              <tr>
+                <th>#</th>
+                <th>Client</th>
+                <th>Date</th>
+                <th>Heure</th>
+                <th>Service</th>
+                <th>Statut</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>1</td>
+                <td>Jean Dupont</td>
+                <td>2024-11-20</td>
+                <td>14:00</td>
+                <td>Coupe de cheveux</td>
+                <td><span class="badge bg-success">Confirmée</span></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Marie Durand</td>
+                <td>2024-11-22</td>
+                <td>10:30</td>
+                <td>Coloration</td>
+                <td><span class="badge bg-warning">En attente</span></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Services</h5>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Coupe de cheveux</h6>
+                    <p class="text-muted">Prix : 15 €</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Coloration</h6>
+                    <p class="text-muted">Prix : 25 €</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">Soin capillaire</h6>
+                    <p class="text-muted">Prix : 20 €</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Avis Section -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Avis des Clients</h5>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h6>Jean Dupont</h6>
+                    <p class="text-muted">"Service excellent, merci beaucoup !"</p>
+                    <span class="badge bg-primary">5/5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h6>Marie Durand</h6>
+                    <p class="text-muted">"Très bon accueil, je reviendrai."</p>
+                    <span class="badge bg-primary">4.5/5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

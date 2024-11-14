@@ -1,0 +1,87 @@
+<div class="container-fluid vh-100">
+  <div class="row h-100">
+    <!-- Section Carrousel avec bâche noire -->
+    <div class="col-md-6 d-none d-md-block p-0 position-relative">
+      <div id="carouselExample" class="carousel slide h-100" data-bs-ride="carousel">
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <img src="img5.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="Image 1">
+          </div>
+          <div class="carousel-item h-100">
+            <img src="img2.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="Image 2">
+          </div>
+          <div class="carousel-item h-100">
+            <img src="img3.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="Image 3">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Suivant</span>
+        </button>
+      </div>
+      <!-- Bâche noire -->
+      <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.3);"></div>
+    </div>
+
+    <!-- Section Formulaire -->
+    <div class="col-md-6 d-flex align-items-center justify-content-center" style="background-color:whitesmoke">
+      <div class="w-75 ">
+        <h2 class="mb-4 fs-1 text-center fw-bold"> <span class=" text-danger">Enregistrez </span><span class="bg-danger text-light fst-italic">votre établissement</span></h2>
+        <form>
+          <!-- Informations générales -->
+          <div class="mb-3 ">
+            <label for="businessName" class="form-label">Nom de l'établissement</label>
+            <input type="text" class="form-control" id="businessName" placeholder="Ex: Salon Bella" required>
+          </div>
+          <div class="mb-3">
+            <label for="ownerName" class="form-label">Nom du propriétaire</label>
+            <input type="text" class="form-control" id="ownerName" placeholder="Ex: Kossi Mensah" required>
+          </div>
+          <div class="mb-3">
+            <label for="category" class="form-label">Catégorie</label>
+            <select class="form-select" id="category" required>
+              <option value="" selected disabled>Choisissez une catégorie</option>
+              <option value="Salon de coiffure">Salon de coiffure</option>
+              <option value="Barber Shop">Barber Shop</option>
+              <option value="Esthétique">Esthétique</option>
+              <option value="Autre">Autre</option>
+            </select>
+          </div>
+
+          <!-- Contact et localisation -->
+          <div class="mb-3">
+            <label for="phone" class="form-label">Téléphone</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Ex: +228 99 88 77 66" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="Ex: contact@salonbella.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">Adresse</label>
+            <input type="text" class="form-control" id="address" placeholder="Ex: 12 Rue de la Beauté, Lomé" required>
+          </div>
+
+          <!-- Services -->
+          <div class="mb-3">
+            <label for="services" class="form-label">Services proposés</label>
+            <textarea class="form-control" id="services" rows="3" placeholder="Ex: Coupe de cheveux, coloration, soins esthétiques..." required></textarea>
+          </div>
+
+          <!-- Image -->
+          <div class="mb-3">
+            <label for="image" class="form-label">Télécharger une image</label>
+            <input type="file" class="form-control" id="image" accept="image/*">
+          </div>
+          <button type="submit" class="btn btn-danger w-100">Enregistrer mon établissement</button>
+          <button class="mt-5 border-0 shadow">Retour</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
