@@ -1,181 +1,268 @@
-
-<main>
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Album example</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
+<section id="carousel" class="mt-5 pt-4 " style="">
+  <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-image-wrapper">
+          <img src="fm5.jpg" class="d-block w-100 carousel-image" alt="Publicité 1">
+          <div class="overlay">
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+              <h5>Promotion spéciale</h5>
+              <p>Profitez de nos offres spéciales pour cet été !</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-image-wrapper">
+          <img src="ig3.jpg" class="d-block w-100 carousel-image" alt="Publicité 2">
+          <div class="overlay">
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+              <h5>Nouveaux salons</h5>
+              <p>Découvrez les nouveaux prestataires dans votre région.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-image-wrapper">
+          <img src="ig1.jpg" class="d-block w-100 carousel-image" alt="Publicité 3">
+          <div class="overlay">
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+              <h5>Réservez maintenant</h5>
+              <p>Facile et rapide, réservez votre prochaine prestation en ligne !</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Précédent</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Suivant</span>
+    </button>
+  </div>
+</section>
 
-  <div class="album py-5 bg-light">
-    <div class="container">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
+<!-- Catalogue de Services -->
+<section id="services" class="container my-5">
+  <div class="text-center mb-4">
+    <h2>Publications des Prestataires</h2>
+    <p>Découvrez nos offres de services et tarifs</p>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" data-aos="fade-up">
+      <div class="card h-100 service-card shadow-sm">
+        <img src="image1.jpg" class="card-img-top" alt="Coiffure">
+        <div class="card-body">
+          <h5 class="card-title">Coiffure simple</h5>
+          <p class="card-text">Prix: 15€ - Durée: 45 min</p>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
+      </div>
+    </div>
+    <div class="col" data-aos="fade-up" data-aos-delay="100">
+      <div class="card h-100 service-card shadow-sm">
+        <img src="image2.jpg" class="card-img-top" alt="Manucure">
+        <div class="card-body">
+          <h5 class="card-title">Manucure</h5>
+          <p class="card-text">Prix: 20€ - Durée: 30 min</p>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
+      </div>
+    </div>
+    <div class="col" data-aos="fade-up" data-aos-delay="200">
+      <div class="card h-100 service-card shadow-sm">
+        <img src="image3.jpg" class="card-img-top" alt="Massage">
+        <div class="card-body">
+          <h5 class="card-title">Massage relaxant</h5>
+          <p class="card-text">Prix: 50€ - Durée: 1 heure</p>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-</main>
+<section class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <img src="fm5.jpg" class="img-fluid w-100 rounded" alt="Salon de coiffure">
+    </div>
+    <div class="col-md-6">
+      <h2 class="mb-3">Découvrez Nos Services de Coiffure</h2>
+      <p>
+        Plongez dans un univers de beauté et de style avec nos services de coiffure professionnels. Que vous
+        souhaitiez une coupe moderne, une coloration audacieuse ou un coiffage élégant, notre équipe d'experts
+        est là pour transformer votre look.
+      </p>
+      <p>
+        Avec une attention particulière aux détails et une passion pour la coiffure, nous vous offrons une
+        expérience inoubliable dans une ambiance chaleureuse et accueillante. Prenez rendez-vous dès
+        aujourd'hui et laissez-nous révéler la beauté qui est en vous !
+      </p>
+      <a href="#reservation" class="btn btn-primary mt-3">Réservez Maintenant</a>
+    </div>
+  </div>
+</section>
 
-<footer class="text-muted py-5">
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-5 bg-light">
   <div class="container">
-    <p class="float-end mb-1">
-      <a href="#">Back to top</a>
-    </p>
-    <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+    <div class="text-center mb-4">
+      <h2>Avis des Clients</h2>
+    </div>
+
+    <!-- Carousel -->
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Testimonial Row 1 (Visible) -->
+        <div class="carousel-item active">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Testimonial 1 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm text-center border-0 shadow">
+                <img src="fm5.jpg" alt="Photo de Marie K." class="rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
+                <div class="card-body">
+                  <blockquote class="blockquote">
+                    <p>Un service exceptionnel, je reviendrai sans hésiter !</p>
+                    <footer class="blockquote-footer">Marie K.</footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm text-center border-0 shadow">
+                <img src="fm5.jpg" alt="Photo de Paul D." class="rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
+                <div class="card-body">
+                  <blockquote class="blockquote">
+                    <p>Très professionnel et aimable, merci pour cette belle expérience.</p>
+                    <footer class="blockquote-footer">Paul D.</footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm text-center border-0 shadow">
+                <img src="fm5.jpg" alt="Photo de Alice T." class="rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
+                <div class="card-body">
+                  <blockquote class="blockquote">
+                    <p>Je recommande vivement ce service à tous mes amis !</p>
+                    <footer class="blockquote-footer">Alice T.</footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Row 2 (Hidden for Carousel Scroll) -->
+        <div class="carousel-item">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Testimonial 4 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm text-center border-0 shadow">
+                <img src="fm5.jpg" alt="Photo de John S." class="rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
+                <div class="card-body">
+                  <blockquote class="blockquote">
+                    <p>Un service de qualité, je suis très satisfait !</p>
+                    <footer class="blockquote-footer">John S.</footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 5 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm text-center border-0 shadow">
+                <img src="fm5.jpg" alt="Photo de Laura B." class="rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
+                <div class="card-body">
+                  <blockquote class="blockquote">
+                    <p>Très agréable, un service que je recommande !</p>
+                    <footer class="blockquote-footer">Laura B.</footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 6 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm text-center border-0 shadow">
+                <img src="fm5.jpg" alt="Photo de Olivier P." class="rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
+                <div class="card-body">
+                  <blockquote class="blockquote">
+                    <p>Un service rapide et professionnel, je reviendrai !</p>
+                    <footer class="blockquote-footer">Olivier P.</footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Précédent</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Suivant</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="container my-5 py-5">
+  <div class="row align-items-center">
+    <!-- Image Section -->
+    <div class="col-md-6">
+      <img src="fm2.jpg" class="img-fluid rounded shadow" alt="Nous Contacter">
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="col-md-6">
+      <h2 class="mb-4">Nous Contacter</h2>
+      <p class="text-muted">N'hésitez pas à nous écrire pour toute question ou information. Nous sommes là pour vous aider.</p>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Votre message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Envoyer le message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer text-center">
+  <div class="container">
+    <p>&copy; 2024 BeautyPlatform. Tous droits réservés.</p>
+    <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp" class="me-2" width="30"></a>
+    <a href="#"><img src="facebook-icon.png" alt="Facebook" class="me-2" width="30"></a>
+    <a href="#"><img src="instagram-icon.png" alt="Instagram" width="30"></a>
   </div>
 </footer>
-
