@@ -1,269 +1,160 @@
-<section id="carousel" class="mt-5 pt-4 " style="">
-  <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="carousel-image-wrapper">
-          <img src="fm5.jpg" class="d-block w-100 carousel-image" alt="Publicité 1">
-          <div class="overlay">
-            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-              <h5>Promotion spéciale</h5>
-              <p>Profitez de nos offres spéciales pour cet été !</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="carousel-image-wrapper">
-          <img src="ig3.jpg" class="d-block w-100 carousel-image" alt="Publicité 2">
-          <div class="overlay">
-            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-              <h5>Nouveaux salons</h5>
-              <p>Découvrez les nouveaux prestataires dans votre région.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="carousel-image-wrapper">
-          <img src="ig1.jpg" class="d-block w-100 carousel-image" alt="Publicité 3">
-          <div class="overlay">
-            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-              <h5>Réservez maintenant</h5>
-              <p>Facile et rapide, réservez votre prochaine prestation en ligne !</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Précédent</span>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light  bg-dark shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="NafiBellLogo1.png" alt="Nafibel" srcset="" style="height: 45px">
+    </a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon "></span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Suivant</span>
-    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-light" href="#catalogue">Catalogue</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#features">Avantages</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#testimonials">Témoignages</a></li>
+        <button class="btn btn-danger">Enregistrer votre établissement</button>
+      </ul>
+    </div>
   </div>
-</section>
+</nav>
 
-<!-- Catalogue de Services -->
-<section id="services" class="container my-5">
-  <div class="text-center mb-4">
-    <h2>Publications des Prestataires</h2>
-    <p>Découvrez nos offres de services et tarifs</p>
-  </div>
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col" data-aos="fade-up">
-      <div class="card h-100 service-card shadow-sm">
-        <img src="image1.jpg" class="card-img-top" alt="Coiffure">
-        <div class="card-body">
-          <h5 class="card-title">Coiffure simple</h5>
-          <p class="card-text">Prix: 15€ - Durée: 45 min</p>
-        </div>
+<!-- Carousel Section -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="tt.jpg" class="d-block w-100 carousel-img" alt="Promo 1">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Réservez facilement vos services de coiffure</h5>
+        <p>Des milliers de prestataires à votre disposition.</p>
       </div>
     </div>
-    <div class="col" data-aos="fade-up" data-aos-delay="100">
-      <div class="card h-100 service-card shadow-sm">
-        <img src="mani.jpg" class="card-img-top" alt="Manucure">
-        <div class="card-body">
-          <h5 class="card-title">Manucure</h5>
-          <p class="card-text">Prix: 20€ - Durée: 30 min</p>
-        </div>
-      </div>
-    </div>
-    <div class="col" data-aos="fade-up" data-aos-delay="200">
-      <div class="card h-100 service-card shadow-sm">
-        <img src="mag.jpg" class="card-img-top" alt="Massage">
-        <div class="card-body">
-          <h5 class="card-title">Massage relaxant</h5>
-          <p class="card-text">Prix: 50€ - Durée: 1 heure</p>
-        </div>
+    <div class="carousel-item">
+      <img src="fm5.jpg" class="d-block w-100 carousel-img" alt="Promo 2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Optimisez votre temps</h5>
+        <p>Réservez et payez en ligne en toute sécurité.</p>
       </div>
     </div>
   </div>
-</section>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
 
-<section class="container my-5">
-  <div class="row align-items-center">
-    <div class="col-md-6">
-      <img src="fm5.jpg" class="img-fluid w-100 rounded" alt="Salon de coiffure">
-    </div>
-    <div class="col-md-6">
-      <h2 class="mb-3">Découvrez Nos Services de Coiffure</h2>
-      <p>
-        Plongez dans un univers de beauté et de style avec nos services de coiffure professionnels. Que vous
-        souhaitiez une coupe moderne, une coloration audacieuse ou un coiffage élégant, notre équipe d'experts
-        est là pour transformer votre look.
-      </p>
-      <p>
-        Avec une attention particulière aux détails et une passion pour la coiffure, nous vous offrons une
-        expérience inoubliable dans une ambiance chaleureuse et accueillante. Prenez rendez-vous dès
-        aujourd'hui et laissez-nous révéler la beauté qui est en vous !
-      </p>
-      <a href="#reservation" class="btn border-danger mt-3 me-5 text-danger">Réservez Maintenant</a>
-      <a class="btn btn-danger mt-3" (click)="onAddNewProvider()">Ajouter votre établissement</a>
+<!-- Catalogue Section -->
+<section id="catalogue" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Catalogue des Prestations</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card catalog-card shadow-sm">
+          <img src="ig2.jpg" class="card-img-top" alt="Prestation 1">
+          <div class="card-body">
+            <h5 class="card-title">Coiffure Élégante</h5>
+            <p class="card-text">Une description du service ici.</p>
+            <button class="btn reserve-btn text-white w-100">Réserver Maintenant</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card catalog-card shadow-sm">
+          <img src="ig1.jpg" class="card-img-top" alt="Prestation 2">
+          <div class="card-body">
+            <h5 class="card-title">Tresse Professionnelle</h5>
+            <p class="card-text">Une description du service ici.</p>
+            <button class="btn reserve-btn text-white w-100">Réserver Maintenant</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card catalog-card shadow-sm">
+          <img src="image3.jpg" class="card-img-top" alt="Prestation 3">
+          <div class="card-body">
+            <h5 class="card-title">Coloration Moderne</h5>
+            <p class="card-text">Une description du service ici.</p>
+            <button class="btn reserve-btn text-white w-100">Réserver Maintenant</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card catalog-card shadow-sm">
+          <img src="mani.jpg" class="card-img-top" alt="Prestation 4">
+          <div class="card-body">
+            <h5 class="card-title">Chignon Raffiné</h5>
+            <p class="card-text">Une description du service ici.</p>
+            <button class="btn reserve-btn text-white w-100">Réserver Maintenant</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
+
+<!-- Features Section -->
+<section id="features" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Pourquoi Nous Choisir ?</h2>
+    <div class="row text-center ">
+      <div class="col-md-4 shadow p-5">
+        <h5>Rapidité</h5>
+        <p>Réservez en quelques clics seulement.</p>
+      </div>
+      <div class="col-md-4 shadow p-5">
+        <h5>Simplicité</h5>
+        <p>Une interface claire et facile à utiliser.</p>
+      </div>
+      <div class="col-md-4 shadow p-5">
+        <h5>Prestataires Qualifiés</h5>
+        <p>Des professionnels certifiés pour vos besoins.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Testimonials Section -->
-<section id="testimonials" class="py-5 bg-light">
+<section id="testimonials" class="testimonials py-5">
   <div class="container">
-    <div class="text-center mb-4">
-      <h2>Avis des Clients</h2>
-    </div>
-
-    <!-- Carousel -->
-    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+    <h2 class="text-center mb-5">Ce Que Nos Clients Disent</h2>
+    <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <!-- Testimonial Row 1 (Visible) -->
         <div class="carousel-item active">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- Testimonial 1 -->
-            <div class="col">
-              <div class="card h-100 shadow-sm text-center border-0 shadow">
-                <img src="fm5.jpg" alt="Photo de Marie K." class="rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
-                <div class="card-body">
-                  <blockquote class="blockquote">
-                    <p>Un service exceptionnel, je reviendrai sans hésiter !</p>
-                    <footer class="blockquote-footer">Marie K.</footer>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-
-            <!-- Testimonial 2 -->
-            <div class="col">
-              <div class="card h-100 shadow-sm text-center border-0 shadow">
-                <img src="fm5.jpg" alt="Photo de Paul D." class="rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
-                <div class="card-body">
-                  <blockquote class="blockquote">
-                    <p>Très professionnel et aimable, merci pour cette belle expérience.</p>
-                    <footer class="blockquote-footer">Paul D.</footer>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-
-            <!-- Testimonial 3 -->
-            <div class="col">
-              <div class="card h-100 shadow-sm text-center border-0 shadow">
-                <img src="fm5.jpg" alt="Photo de Alice T." class="rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
-                <div class="card-body">
-                  <blockquote class="blockquote">
-                    <p>Je recommande vivement ce service à tous mes amis !</p>
-                    <footer class="blockquote-footer">Alice T.</footer>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-          </div>
+          <img src="img4.jpg" alt="Client 1">
+          <p class="mt-3">"Service incroyable, j'ai trouvé un salon de coiffure parfait !"</p>
+          <h6>- Marie K.</h6>
         </div>
-
-        <!-- Testimonial Row 2 (Hidden for Carousel Scroll) -->
         <div class="carousel-item">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- Testimonial 4 -->
-            <div class="col">
-              <div class="card h-100 shadow-sm text-center border-0 shadow">
-                <img src="fm5.jpg" alt="Photo de John S." class="rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
-                <div class="card-body">
-                  <blockquote class="blockquote">
-                    <p>Un service de qualité, je suis très satisfait !</p>
-                    <footer class="blockquote-footer">John S.</footer>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-
-            <!-- Testimonial 5 -->
-            <div class="col">
-              <div class="card h-100 shadow-sm text-center border-0 shadow">
-                <img src="fm5.jpg" alt="Photo de Laura B." class="rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
-                <div class="card-body">
-                  <blockquote class="blockquote">
-                    <p>Très agréable, un service que je recommande !</p>
-                    <footer class="blockquote-footer">Laura B.</footer>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-
-            <!-- Testimonial 6 -->
-            <div class="col">
-              <div class="card h-100 shadow-sm text-center border-0 shadow">
-                <img src="fm5.jpg" alt="Photo de Olivier P." class="rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
-                <div class="card-body">
-                  <blockquote class="blockquote">
-                    <p>Un service rapide et professionnel, je reviendrai !</p>
-                    <footer class="blockquote-footer">Olivier P.</footer>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-          </div>
+          <img src="fm2.jpg" alt="Client 2">
+          <p class="mt-3">"Facile à utiliser, je recommande à tous mes amis."</p>
+          <h6>- Paul D.</h6>
         </div>
-
+        <div class="carousel-item">
+          <img src="mg4.jpg" alt="Client 3">
+          <p class="mt-3">"Les prestataires sont très professionnels et à l'écoute."</p>
+          <h6>- Fatou A.</h6>
+        </div>
       </div>
-
-      <!-- Carousel Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Précédent</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Suivant</span>
       </button>
     </div>
   </div>
 </section>
-
-
-
-<section class="container my-5 py-5">
-  <div class="row align-items-center">
-    <!-- Image Section -->
-    <div class="col-md-6">
-      <img src="fm2.jpg" class="img-fluid rounded shadow" alt="Nous Contacter">
-    </div>
-
-    <!-- Contact Form Section -->
-    <div class="col-md-6">
-      <h2 class="mb-4">Nous Contacter</h2>
-      <p class="text-muted">N'hésitez pas à nous écrire pour toute question ou information. Nous sommes là pour vous aider.</p>
-      <form>
-        <div class="mb-3">
-          <label for="name" class="form-label">Nom</label>
-          <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Votre email" required>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="4" placeholder="Votre message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-danger w-100 ">Envoyer le message</button>
-      </form>
-    </div>
-  </div>
-</section>
-
 
 <!-- Footer -->
-<footer class="footer text-center">
+<footer class="text-center bg-black text-light" >
   <div class="container">
-    <p>&copy; 2024 BeautyPlatform. Tous droits réservés.</p>
-    <a href="#"><img src="iconeWhat.png" alt="WhatsApp" class="me-2" width="30"></a>
-    <a href="#"><img src="facebook.png" alt="Facebook" class="me-2" width="30"></a>
-    <a href="#"><img src="instagram.png" alt="Instagram" width="30"></a>
+    <p>&copy; 2024 Réservation Beauté. Tous droits réservés.</p>
+    <p>Suivez-nous :
+      <a href="#" class="ms-2">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">WhatsApp</a>
+    </p>
   </div>
 </footer>
