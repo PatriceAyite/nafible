@@ -12,7 +12,7 @@
         <li class="nav-item"><a class="nav-link text-light" href="#catalogue">Catalogue</a></li>
         <li class="nav-item"><a class="nav-link text-light" href="#features">Avantages</a></li>
         <li class="nav-item"><a class="nav-link text-light" href="#testimonials">Témoignages</a></li>
-        <button class="btn btn-danger">Enregistrer votre établissement</button>
+        <button class="btn btn-danger" (click)="onAddNewProvider()">Enregistrer votre établissement</button>
       </ul>
     </div>
   </div>
@@ -50,14 +50,72 @@
     <h2 class="text-center mb-5">Catalogue des Prestations</h2>
     <div class="row row-cols-1 row-cols-md-4 g-4">
       <div class="col">
+        <!-- La partie de reservation  -->
         <div class="card catalog-card shadow-sm">
           <img src="ig2.jpg" class="card-img-top" alt="Prestation 1">
           <div class="card-body">
             <h5 class="card-title">Coiffure Élégante</h5>
             <p class="card-text">Une description du service ici.</p>
-            <button class="btn reserve-btn text-white w-100">Réserver Maintenant</button>
+            <button class="btn reserve-btn text-white w-100" data-bs-toggle="modal" data-bs-target="#reservationModal">Réserver Maintenant</button>
           </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="reservationModalLabel">Détails de la Réservation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <!-- Image et Informations générales -->
+                  <div class="col-md-5">
+                    <img src="ig2.jpg" class="img-fluid rounded shadow" alt="Coiffure Élégante">
+                  </div>
+                  <div class="col-md-7">
+                    <h3>Coiffure Élégante</h3>
+                    <p><strong>Description :</strong> Une description détaillée de la prestation ici.</p>
+                    <p><strong>Prix :</strong> 25,000 FCFA</p>
+                    <p><strong>Établissement :</strong> Salon de Beauté Prestige</p>
+                    <p><strong>Durée estimée :</strong> 2 heures</p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <!-- Formulaire -->
+                <div class="row mt-3">
+                  <h4>Informations de Réservation</h4>
+                  <form>
+                    <div class="col-md-12 mb-3">
+                      <label for="customerName" class="form-label">Nom et Prénom</label>
+                      <input type="text" class="form-control" id="customerName" placeholder="Entrez votre nom">
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <label for="customerPhone" class="form-label">Téléphone</label>
+                      <input type="text" class="form-control" id="customerPhone" placeholder="Entrez votre numéro de téléphone">
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <label for="reservationDate" class="form-label">Date et Heure</label>
+                      <input type="datetime-local" class="form-control" id="reservationDate">
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <label for="additionalNotes" class="form-label">Notes supplémentaires</label>
+                      <textarea class="form-control" id="additionalNotes" rows="3" placeholder="Ajoutez des précisions si nécessaire"></textarea>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Annuler</button>
+                <button type="button" class="btn btn-danger">Confirmer la Réservation</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div class="col">
         <div class="card catalog-card shadow-sm">
