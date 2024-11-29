@@ -1,0 +1,192 @@
+<!-- Sidebar -->
+<div class="sidebar">
+  <div class="logo text-center py-4">
+    <h3>[Logo]</h3>
+  </div>
+  <div class="logo text-center py-4">
+    <h2>Information</h2>
+  </div>
+</div>
+
+<!-- Main Panel -->
+<div class="main-panel">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Tableau de Bord</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <!-- Content -->
+  <div class="container-fluid">
+    <!-- Row 1 - Statistiques & Activité -->
+    <div class="row">
+      <!-- Statistiques Chart -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header bg-dark text-white">
+            <h5>Statistiques</h5>
+          </div>
+          <div class="card-body">
+            <canvas id="statistiquesChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <!-- Utilisateurs Chart -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header bg-dark text-white">
+            <h5>Utilisateurs</h5>
+          </div>
+          <div class="card-body">
+            <canvas id="utilisateursChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <!-- Activité Récente -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header bg-dark text-white">
+            <h5>Activité Récente</h5>
+          </div>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item" data-bs-toggle="popover" title="Nouvelle Réservation" data-bs-content="Cliquez ici pour plus de détails.">Nouvelle réservation</li>
+              <li class="list-group-item" data-bs-toggle="popover" title="Utilisateur ajouté" data-bs-content="Voir le profil de l'utilisateur.">Utilisateur ajouté</li>
+              <li class="list-group-item" data-bs-toggle="popover" title="Offre publiée" data-bs-content="Consulter l'offre publiée.">Offre publiée</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <!-- Réservations Récentes -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header bg-danger text-white">
+              <h5>Réservations Récentes</h5>
+            </div>
+            <div class="card-body">
+              <table class="table table-striped">
+                <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Nom de la Coiffure</th>
+                  <th>Prix (€)</th>
+                  <th>Client</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Tresses Africaines</td>
+                  <td>40</td>
+                  <td>Jean Dupont</td>
+                  <td>2024-11-19</td>
+                  <td><span class="badge bg-success">Confirmée</span></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Coupe Dégradé</td>
+                  <td>25</td>
+                  <td>Marie Dubois</td>
+                  <td>2024-11-20</td>
+                  <td><span class="badge bg-warning">En attente</span></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ajouter une prestation -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header bg-dark text-white">
+              <h5>Poster une Prestation</h5>
+            </div>
+            <div class="card-body text-center">
+              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#postPrestationModal">Ajouter une prestation</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2024 Tableau de Bord</p>
+    </footer>
+  </div>
+
+  <!-- Modal - Ajouter une Prestation -->
+  <div class="modal fade" id="postPrestationModal" tabindex="-1" aria-labelledby="postPrestationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="postPrestationModalLabel">Nouvelle Prestation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="prestationForm">
+            <div class="mb-3">
+              <label for="serviceName" class="form-label">Nom du Service</label>
+              <input type="text" class="form-control" id="serviceName" required>
+            </div>
+            <div class="mb-3">
+              <label for="serviceDescription" class="form-label">Description</label>
+              <textarea class="form-control" id="serviceDescription" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="servicePrice" class="form-label">Prix (€)</label>
+              <input type="number" class="form-control" id="servicePrice" required>
+            </div>
+            <div class="mb-3">
+              <label for="servicePrice" class="form-label">Imge</label>
+              <input type="file" class="form-control" id="servicePrice" required>
+            </div>
+            <div class="mb-3">
+              <label for="serviceCategory" class="form-label">Catégorie</label>
+              <select class="form-select" id="serviceCategory" required>
+                <option value="" disabled selected>Choisir une catégorie</option>
+                <option value="Coiffure">Coiffure</option>
+                <option value="Beauté">Beauté</option>
+                <option value="Massage">Massage</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Enregistrer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Initialiser les popovers
+    document.querySelectorAll('[data-bs-toggle="popover"]').forEach(function (popover) {
+      new bootstrap.Popover(popover);
+    });
+
+    // Form Submission Handling
+    document.getElementById('prestationForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('serviceName').value;
+      const description = document.getElementById('serviceDescription').value;
+      const price = document.getElementById('servicePrice').value;
+      const category = document.getElementById('serviceCategory').value;
+
+      alert(`Prestation "${name}" ajoutée avec succès !`);
+      // Fermer le modal après ajout
+      const modal = bootstrap.Modal.getInstance(document.getElementById('postPrestationModal'));
+      modal.hide();
+    });
+  </script>
